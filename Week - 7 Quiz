@@ -1,0 +1,49 @@
+1.Given the following permutation of a,b,c,d,e,f,g,h,i,j, what is the next permutation in lexicographic (dictionary) order? Write your answer without any blank spaces between letters.
+    eibjdhgfca
+    
+ SOLUTION : eibjfacdgh   
+ 
+2.We want to add a function listmax() to the class Node that implements user defined lists such that listmax() computes the maximum value in a list where values are of type int.
+
+An incomplete implementation of listmax() given below. You have to provide expressions to put in place of AAA, BBB and CCC.
+
+     def listmax(self):
+        if self.value == None:
+            return(AAA)
+        elif self.next == None:
+            return(BBB)
+        else:
+            return(CCC)
+ 1.AAA: 0, BBB: self.value, CCC: max(self.value, self.next.listmax())
+ 2.AAA: 0, BBB: self.value, CCC: max(self.value, self.next.value)
+ 3.AAA: None, BBB: self.value, CCC: max(self.value, self.next.listmax())
+ 4.AAA: None, BBB: self.value, CCC: max(self.value, self.next.value)         
+          
+ SOLUTION : Option 3
+ 
+ 3. Suppose we add this function foo() to the class Tree that implements search trees. For a name mytree with a value of type Tree, what would mytree.foo() compute?
+
+    def foo(self):
+        if self.isempty():
+            return(0)
+        elif self.isleaf():
+            return(1)
+        else:
+            return(self.left.foo() + self.right.foo()))
+            
+ 1.The number of nodes in mytree
+ 2.The largest value in mytree.
+ 3.The length of the longest path from root to leaf in mytree.
+ 4.The number of leaves in mytree. 
+ 
+ SOLUTION : Option 4
+ 
+ 4. Inorder traversal of a binary tree has been defined in the lectures. A postorder traversal lists the vertices of a binary tree (not necessarily a search tree) as follows:
+Print the left subtree in postorder.
+Print the right subtree in postorder.
+Print the root.
+Suppose we have a binary tree with 10 nodes labelled a, b, c, d, e, f, g, h, i, j, with postorder traversal ehicbjfadg and inorder traversal ehbicgjafd. What is the left child of the root node?
+ 
+ SOLUTION : [b]
+           
+            
