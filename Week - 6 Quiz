@@ -1,0 +1,23 @@
+1.Suppose u and v both denote sets in Python. Under what condition can we guarantee that u - (u - v) == v?
+ 1.The sets u and v should be disjoint.
+ 2.The set v should be a subset of the set u.
+ 3.The set u should be a subset of the set v.
+ 4.This is true for any u and v.
+ 
+ SOLUTION : Option 2
+ 
+2.Suppose u and v both denote sets in Python. Under what condition can we guarantee that u|v == u^v?
+ 1.The sets u and v should be disjoint.
+ 2.The set u should be a subset of the set v.
+ 3.The set v should be a subset of the set u.
+ 4.This is true for any u and v.
+ 
+ SOLUTION : Option 1
+ 
+3.Suppose we insert 97 into the max heap [98,67,89,38,42,54,89,17,25]. What is the resulting heap?
+
+ SOLUTION : [98,97,89,38,67,54,89,17,25,42]
+
+4.Suppose we we apply delete_max() twice to the heap [100,97,93,38,67,54,93,17,25,42].  What is the resulting heap?
+
+ SOLUTION : [93,67,93,38,42,54,25,17]
